@@ -6,7 +6,7 @@ var bio = {
         "email": "ngkelly3@gmail.com",
         "github": "ngkelly3",
         "twitter": "@thisiskellywing",
-        "location": "Calgary"
+        "location": "Vancouver"
     },
     "welcomeMessage": "Welcome to my website!  Enjoy your stay.",
     "skills": ["Java", "HTML", "CSS", "Javascript"],
