@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+  <!-- This tells the browser how to read the document. -->
+  <meta charset="utf-8">
+  <!-- Tells the browser what the title of this page should be. -->
+  <title>Resume</title>
+  <!-- Load favicon. -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <!-- Load the page styles. -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Oxygen%7CMontserrat%7CLobster+Two' rel='stylesheet' type='text/css'>
+  <!-- Load jQuery -->
+  <script src="js/jQuery.js"></script>
+  <script src="js/helper.js"></script>
+  <!-- initialize bootstrap.js -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Interactive Google Map -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbTW2cfq2ChMvJdefmLuhralL9vtx6Zuo&libraries=places"></script>
+  <meta name="viewport" content="width=device-width">
+</head>
+<body>
+  <div class="container" id="main">
+    <!-- Bootstrap Navbar code -->
+    <header class="row">
+      <div id="navbarHTML" class="col-md-12"></div>
+    </header>
+    <div id="header" class="text-center">
+      <ul id="topContacts" class="list-inline"></ul>
+    </div>
+    <div id="skills" class="col-md-12 text-center list-inline"></div>
+    <div id="biopic" class="col-md-12"></div>
+    <div style="clear: both;"></div>
+    <!-- horizontal rule -->
+    <div class="row hr"></div>
+    <!-- modal section -->
+    <section class="row text-center" id="modalcode">
+      <h2>A Little Bit About Me...</h2>
+    </section>
+    <div class="row hr"></div>
+    <div id="mapDiv" class="col-md-12 text-center">
+      <h2>Where I've Lived and Worked</h2>
+    </div>
+    <div class="row hr"></div>
+    <footer id="lets-connect" class="col-md-12 text-center">
+      <h3>Let's Connect!</h3>
+        <ul id="footerContacts" class="list-inline">
+      </ul>
+    </footer>
+  </div>
+  <!--Linking to JS file -->
+  <script src="js/resumeBuilder.js"></script>
+  <!-- Checking to see if you have not changed each section of the resume -->
+  <script type="text/javascript">
+    if(document.getElementById('navbarHTML').length === null) {
+      document.getElementById('navbarHTML').style.display = 'none';
+    }
+    if(document.getElementById('modalcode').length === null) {
+      document.getElementById('navbarHTML').style.display = 'none';
+    }
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('topContacts').style.display = 'none';
+    }
+    if(document.getElementsByTagName('h1').length === 0) {
+      document.getElementById('header').style.display = 'none';
+    }
+    if(document.getElementsByClassName('work-entry').length === 0) {
+      document.getElementById('workExperience').style.display = 'none';
+    }
+    if(document.getElementsByClassName('project-entry').length === 0) {
+      document.getElementById('projects').style.display = 'none';
+    }
+    if(document.getElementsByClassName('education-entry').length === 0) {
+      document.getElementById('education').style.display = 'none';
+    }
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('lets-connect').style.display = 'none';
+    }
+    if(document.getElementById('map') === null) {
+      document.getElementById('mapDiv').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
