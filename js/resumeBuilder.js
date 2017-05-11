@@ -5,7 +5,6 @@ var bio = {
         "mobile": "587-225-0076",
         "email": "ngkelly3@gmail.com",
         "github": "ngkelly3",
-        "twitter": "@thisiskellywing",
         "location": "Vancouver"
     },
     "welcomeMessage": "Welcome to my website!  Enjoy your stay.",
